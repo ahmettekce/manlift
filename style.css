@@ -81,6 +81,9 @@ body {
     .menu button:nth-child(5) {
         flex: 0 0 calc(50% - 20px);
     }
+    .header .img{
+        display: none;
+    }
 }
 
 .content {
@@ -182,4 +185,10 @@ h1 {
 .gallery img:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact{
+    background-image: url('iletisim.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
