@@ -148,4 +148,7 @@ footer {
     .header-icon .triangle {
         transform: scale(0.6);
     }
+    .swiper {
+        max-width: 90%;
+    }
 }
