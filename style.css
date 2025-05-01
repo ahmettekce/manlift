@@ -3,47 +3,55 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #f8f9fa;
     color: #333;
-  }
-  header {
+}
+
+header {
     background: linear-gradient(to right, #b30000, #800000);
     color: white;
     padding: 40px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
-  }
-  nav {
+}
+
+nav {
     background: #660000;
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 15px 0;
-  }
-  nav a {
+}
+
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s;
-  }
-  nav a:hover {
+}
+
+nav a:hover {
     color: #ffd700;
-  }
-  section {
+}
+
+section {
     padding: 60px 20px;
     text-align: center;
-  }
-  .swiper {
+}
+
+.swiper {
     max-width: 50%;
     height: 300px;
     margin: 40px auto;
-  }
-  .swiper-slide {
+}
+
+.swiper-slide {
     background-position: center;
     background-size: cover;
     border-radius: 10px;
-  }
-  .cta {
+}
+
+.cta {
     margin-top: 20px;
     display: inline-block;
     padding: 15px 30px;
@@ -53,26 +61,29 @@ body {
     font-size: 20px;
     border-radius: 8px;
     transition: background 0.3s;
-  }
-  .cta:hover {
+}
+
+.cta:hover {
     background: #990000;
-  }
-  footer {
+}
+
+footer {
     background: #222;
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 14px;
-  }
+}
 
-  /* Yeni stil: sarı-siyah uyarı işareti ve animasyonlu parlak çerçeve */
-  .warning-sign {
+/* Yeni stil: sarı-siyah uyarı işareti ve animasyonlu parlak çerçeve */
+.warning-sign {
     width: 100px;
     height: 100px;
     position: relative;
     margin: 40px auto;
-  }
-  .triangle {
+}
+
+.triangle {
     width: 0;
     height: 0;
     border-left: 50px solid transparent;
@@ -83,8 +94,9 @@ body {
     left: 0;
     filter: drop-shadow(0 0 10px yellow);
     animation: pulse 1.5s infinite ease-in-out;
-  }
-  .triangle::after {
+}
+
+.triangle::after {
     content: '!';
     position: absolute;
     top: 25px;
@@ -92,25 +104,48 @@ body {
     font-size: 30px;
     color: black;
     font-weight: bold;
-  }
-  @keyframes pulse {
-    0%, 100% { filter: drop-shadow(0 0 5px yellow); }
-    50% { filter: drop-shadow(0 0 15px yellow); }
-  }
+}
 
-  /* Header sağ ve sol animasyonlu uyarı simgesi */
-  .header-icon {
+@keyframes pulse {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 5px yellow);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 15px yellow);
+    }
+}
+
+/* Header sağ ve sol animasyonlu uyarı simgesi */
+.header-icon {
     position: absolute;
     top: 50px;
     width: 60px;
     height: 60px;
-  }
-  .header-icon.left {
+}
+
+.header-icon.left {
     left: 20px;
-  }
-  .header-icon.right {
+}
+
+.header-icon.right {
     right: 40px;
-  }
-  .header-icon .triangle {
+}
+
+.header-icon .triangle {
     transform: scale(1);
-  }
+}
+
+@media only screen and (max-width:600px) {
+    .right {
+        display: none;
+    }
+    header>h1, header>p{
+        font-size: 15px;
+    }
+    .header-icon .triangle {
+        transform: scale(0.6);
+    }
+}
