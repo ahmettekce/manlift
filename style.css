@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
 .exo {
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
@@ -182,25 +183,30 @@ footer {
 
 @media only screen and (max-width:400px) {
 
-    header>h1,
-    header>p {
-        font-size: 12px;
-    }
-
     .header-icon .triangle {
         transform: scale(0.4);
     }
 
     .header-title>h1,
+    .header-title>h2,
     .header-title>p {
         width: 100%;
-        font-size: 10px;
+        font-size: 15px;
         top: 15px;
     }
-    .header-title>h1{
+
+    .header-title>h1 {
         font-size: 25px;
+        margin: 1px;
+        font-weight: 900;
     }
-    .triangle{
+
+    .triangle {
         top: 0 !important;
+    }
+
+    .header-title>h2 {
+        font-size: 20px;
+        margin: 1px;
     }
 }
