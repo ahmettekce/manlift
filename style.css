@@ -197,6 +197,9 @@ footer {
         font-size: 10px;
         top: 15px;
     }
+    .header-title>h1{
+        font-size: 25px;
+    }
     .triangle{
         top: 0 !important;
     }
