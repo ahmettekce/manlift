@@ -15,7 +15,10 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #b30000, #800000);
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("./cekici4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
     color: white;
     padding: 40px 20px;
     text-align: center;
