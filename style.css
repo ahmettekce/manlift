@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
 
 .exo {
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: italic;
+    font-family: "Comic Relief", system-ui;
+    font-weight: 700;
+    font-style: normal;
 }
 
 body {
@@ -24,6 +23,28 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
+    height: 700px;
+}
+
+header h1 {
+    margin-top: 270px;
+    font-size: 75px;
+    margin-left: -150px;
+    margin-bottom: 1px;
+}
+
+header h2 {
+    margin-top: 1px;
+    font-size: 50px;
+    margin-left: -50px;
+    margin-bottom: 1px;
+}
+
+header p {
+    margin-top: 1px;
+    font-size: 25px;
+    margin-left: 250px;
+    margin-bottom: 1px;
 }
 
 nav {
@@ -133,7 +154,7 @@ footer {
 /* Header sağ ve sol animasyonlu uyarı simgesi */
 .header-icon {
     position: absolute;
-    top: 50px;
+    top: 50%;
     width: 60px;
     height: 60px;
 }
@@ -151,20 +172,15 @@ footer {
 }
 
 
-@media only screen and (max-width:600px) {
-    .right {
-        display: none;
-    }
-
-    header>h1,
-    header>p {
-        font-size: 15px;
-        text-align: end;
-    }
-
+@media only screen and (max-width:800px) {
     .header-icon .triangle {
         transform: scale(0.6);
         top: 25px;
+    }
+
+    .header-icon {
+        top: 30%;
+
     }
 
     .swiper {
@@ -177,56 +193,79 @@ footer {
         font-size: 15px;
     }
 
-    .header-title>h1,
-    .header-title>h2,
-    .header-title>p {
-        width: 100%;
-        font-size: 15px;
-        top: 15px;
-        margin-left: 70px;
+    header {
+        height: 250px;
     }
-.header-title>p{
-    max-width: 70%;
-}
-    .header-title>h1 {
+
+    header h1 {
+        margin-top: 50px;
+        font-size: 50px;
+    }
+
+    header h2 {
         font-size: 35px;
-        margin: 1px;
-        font-weight: 600;
-        margin-left: -20px;
     }
-.header-title>h2 {
-        font-size: 20px;
-        margin: 1px;
+
+    header p {
+        margin-left: 125px;
+        font-size: 15px;
     }
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:600px) {
 
-    .header-icon .triangle {
+    /* .header-icon .triangle {
         transform: scale(0.4);
     }
 
-    .header-title>h1,
-    .header-title>h2,
-    .header-title>p {
-        width: 100%;
-        font-size: 15px;
-        top: 15px;
-    }
-
-    .header-title>h1 {
-        font-size: 35px;
-        margin: 1px;
-        font-weight: 600;
-        margin-left: -20px;
-    }
-.header-title>h2 {
-        font-size: 20px;
-        margin: 1px;
-    }
     .triangle {
         top: 0 !important;
+    } */
+    header h1 {
+        margin-left: -100px;
     }
 
-    
+    header h2 {
+        margin-left: -75px;
+
+    }
+
+    header p {
+        margin-left: 50px;
+
+    }
+
+}
+@media only screen and (max-width:540px) {
+
+    header h1 {
+        margin-left: -50px;
+    }
+
+    header h2 {
+        margin-left: -25px;
+
+    }
+
+    header p {
+        margin-left: 100px;
+
+    }
+
+}@media only screen and (max-width:480px) {
+
+    header h1 {
+        margin-left: 0px;
+    }
+
+    header h2 {
+        margin-left: 25px;
+
+    }
+
+    header p {
+        margin-left: 100px;
+
+    }
+
 }
