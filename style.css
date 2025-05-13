@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("./cekici4.jpg");
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("./cekici4.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
@@ -41,8 +41,8 @@ margin-left: 100px;
 
 header p {
     margin-top: 1px;
-    font-size: 25px;
-    margin-top: 530px;
+    font-size: 30px;
+    margin-left: 175px;
 }
 
 nav {
@@ -205,7 +205,6 @@ footer {
 
     header p {
         font-size: 15px;
-        margin-top: 110px;
     }
 }
 
@@ -225,11 +224,11 @@ footer {
 
     header h2 {
         font-size: 30px;
+        margin-left: 75px;
     }
 
     header p {
         font-size: 15px;
-        margin-top: 125px;
     }
 
 }
@@ -242,9 +241,12 @@ footer {
 
     header h2 {
         font-size: 25px;
+        margin-left: 50px;
     }
 
-
+header p{
+    margin-left: 90px;
+}
 
 }
 
@@ -260,7 +262,6 @@ footer {
 
     header p {
         font-size: 10px;
-        margin-top: 175px;
 
     }
 
